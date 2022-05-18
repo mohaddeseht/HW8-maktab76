@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h2>Login to Colorlib</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          ut non natus.
+        </p>
+        <form class="form-data" onsubmit="getInfo(event)" action="#">
+          <label for="">Username</label>
+          <input
+            class="text-input"
+            type="email"
+            name="email"
+            id="email"
+            pattern="[a-z._%+-]+@[a-z.-]+\.[a-z]{2,}$"
+            placeholder="Your-email@gmail.com"
+            required
+          />
+
+          <label for="">password</label>
+          <input
+            class="text-input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Your password"
+            pattern="[0-9]+"
+            required
+          />
+          <div class="remember">
+            <div class="checkbox-container">
+              <input type="checkbox" checked />
+              <label for="">Remember me</label>
+            </div>
+            <a href="#">Forgot password</a>
+          </div>
+
+          <button class="btn" type="submit">Log in</button>
+        </form>
+      </div>
+      <div class="pic"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
